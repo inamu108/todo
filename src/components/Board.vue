@@ -3,8 +3,8 @@
     <header>my Trello</header>
     <main>
       <p class="info-line">All: 0 tasks</p>
-      <list v-for="(list, index) in lists" :key="list.id" :title="list.title" :listIndex="index"></list>
-      <ListAdd></ListAdd>
+      <List v-for="(list, index) in lists" :key="list.id" :title="list.title" :listIndex="index" />
+      <ListAdd />
     </main>
   </div>
 </template>
