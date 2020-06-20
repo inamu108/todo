@@ -1,12 +1,6 @@
 <template>
   <form :class="classList" @submit.prevent="addList">
-    <input v-model="title"
-          type="text"
-          class="text-input"
-          placeholder="Add new list"
-          @focusin="startEditing"
-          @focusout="finishEditing"
-    >
+    <input v-model="title" type="text" class="text-input" placeholder="Add new list" @focusin="startEditing" @focusout="finishEditing">
     <button v-if="isEditing || titleExists" type="submit" class="add-button">Add</button>
   </form>
 </template>
