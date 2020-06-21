@@ -3,7 +3,7 @@
     <header>my Trello</header>
     <main>
       <p class="info-line">All: 0 tasks</p>
-      <List v-for="(list, index) in lists" :key="list.id" :title="list.title" :listIndex="index" />
+      <List v-for="(list, index) in lists" :key="list.id" :title="list.title" :listIndex="index" :cards="list.cards" />
       <ListAdd />
     </main>
   </div>
