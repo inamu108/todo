@@ -2,7 +2,7 @@
   <div>
     <header>my Trello</header>
     <main>
-      <p class="info-line">All: 0 tasks</p>
+      <p class="info-line">All: {{totalCardCount}} tasks</p>
       <List v-for="(list, index) in lists" :key="list.id" :title="list.title" :listIndex="index" :cards="list.cards" />
       <ListAdd />
     </main>
@@ -23,6 +23,9 @@ export default {
     ...mapState([
       'lists'
     ]),
+    totalCardCount() {
+      return this.$store.getters.totalCardCount
+    }
   },
 }
 </script>
