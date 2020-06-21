@@ -2,6 +2,7 @@
   <div class="list">
     <div class="list-header">
       <p class="list-title">{{ title }}</p>
+      <p class="list-counter">total: {{ totalCardList }}</p>
       <div class="delete-list" @click="removeList">×</div>
     </div>
     <card v-for="(card, index) in cards" :body="card.body" :key="card.id" :cardIndex="index" :listIndex="listIndex" />
@@ -32,6 +33,11 @@ export default {
       required: true
     }
   }, 
+  computed: {
+    totalCardList() {
+      return this.cards.length
+    }
+  },
   methods: {
     removeList: function() {
       if(confirm('本当にこのリストを削除しますか？')) {
