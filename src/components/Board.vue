@@ -1,12 +1,18 @@
 <template>
   <div>
-    <header>my Trello</header>
-    <main>
-      <p class="info-line">All: {{totalCardCount}} tasks</p>
-      <draggable :list="lists" @end="movingList" class="list-index">
-        <List v-for="(list, index) in lists" :key="list.id" :title="list.title" :listIndex="index" :cards="list.cards" @change="movingCard" />
-        <ListAdd />
-      </draggable>
+    <header id="header">
+      <div class="header-area">
+        <h1 class="head01">Trello風</h1>
+      </div>
+    </header>
+    <main id="main">
+      <div class="main-area">
+        <p class="info-line">All: {{totalCardCount}} tasks</p>
+        <draggable :list="lists" @end="movingList" class="list-index">
+          <List v-for="(list, index) in lists" :key="list.id" :title="list.title" :listIndex="index" :cards="list.cards" @change="movingCard" />
+          <ListAdd />
+        </draggable>
+      </div>
     </main>
   </div>
 </template>
