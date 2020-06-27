@@ -2,7 +2,7 @@
   <div>
     <header id="header">
       <div class="header-area">
-        <h1 class="head01">Trello風</h1>
+        <h1 class="head01">タスク管理</h1>
       </div>
     </header>
     <main id="main">

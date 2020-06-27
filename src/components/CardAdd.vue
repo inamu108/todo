@@ -1,6 +1,6 @@
 <template>
   <form :class="classList" @submit.prevent="addCardList">
-    <input v-model="body" type="text" class="text-input" placeholder="Add new card" @focusin="startEditing" @focusout="finishEditing"/>
+    <input v-model="body" type="text" class="text-input" placeholder="新しいカードを作る" @focusin="startEditing" @focusout="finishEditing"/>
     <button v-if="isEditing || bodyExists" type="submit" class="add-button">Add</button>
   </form>
 </template>

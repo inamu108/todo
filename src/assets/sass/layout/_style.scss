@@ -14,13 +14,8 @@ $breakpoints: (
 }
 
 html {
-  font-family: 'Avenir', Helvetica, Arial, 'system-ui', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  width: 100%;
-  height: 100%;
+  font-family: YakuHanJP, Roboto, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans Japanese", "Source Sans Pro", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", sans-serif;
   color: $main_color_font;
-  overflow-x: scroll;
 }
 
 #header {
@@ -111,7 +106,7 @@ html {
   background-color: #ccc;
   border-radius: 8px;
   border: none;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
   color: #242424;
   cursor: pointer;
@@ -134,7 +129,7 @@ html {
   color: #fff;
   &:hover {
     opacity: 0.8;
-  cursor: pointer;
+    cursor: pointer;
   }
 }
 
@@ -142,13 +137,13 @@ html {
   background-color: #fff;
 }
 .addable .add-button {
-  background-color: #00d78f;
+  background-color: #fccf49;
   pointer-events: auto;
   cursor: pointer;
 }
 
 .add-button:active {
-  background-color: #00d78f;
+  background-color: #fccf49;
 }
 
 .list-header {
@@ -160,6 +155,7 @@ html {
   padding: 15px;
   font-size: 20px;
   font-weight: bold;
+  color: $main_color_font;
 }
 
 .list-counter {
